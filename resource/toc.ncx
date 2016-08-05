@@ -11,11 +11,6 @@
     <text>Unknown</text>
   </docTitle>
   <navMap>
-    <navPoint id="ucb6b7ebd-b975-40c3-ac33-ff0b295a06ca" playOrder="1">
-      <navLabel>
-        <text>Start</text>
-      </navLabel>
-      <content src="index.html"/>
-    </navPoint>
+    {0}
   </navMap>
 </ncx>

@@ -1,3 +1,5 @@
-.IDEA
+.idea/
 
 *.pyc
+
+test.py
