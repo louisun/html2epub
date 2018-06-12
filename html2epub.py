@@ -3,8 +3,10 @@ import shutil
 import htmlcl
 import zipFile
 
+def cmp(a):
+    return int(a.split('-', 1)[0])
 
-class html2epub:
+class Html2epub:
     def __init__(self, Path, Topath, book_name, content):
 
         self.path = self.Path2Std(Path)
@@ -50,6 +52,9 @@ class html2epub:
 
         all_file = os.listdir(self.path)
 
+
+        all_file = sorted(all_file , key=cmp, reverse=True)
+
         for _id, html_name in enumerate(all_file, start=1):
 
             print(html_name)
@@ -94,12 +99,10 @@ class html2epub:
 
     def Path2Std(self, Path):
 
-        Path = Path
         Path = Path.replace('\\', '/')
 
         if Path.endswith('/'):
             pass
         else:
             Path += '/'
-
         return Path
