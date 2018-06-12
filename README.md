@@ -1,10 +1,16 @@
 # html2epub
 
-批量转换 html 为 epub 文件
+批量转换 html 为 epub 文件，会自动生成目录。
 
-只支持 Python3, 自动生成目录
+个人是用来将 zhihu-oauth 下载的知乎答案、收藏夹汇集成 epub 文件方便查看。
 
-与 zhihu-oauth 一起使用体验更佳
+## 使用方法：
+
+```bash
+python main.py
+```
+
+注意：只支持 Python3
 
 ![](Img/1.png)
 
